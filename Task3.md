@@ -5,6 +5,39 @@ The player B is trying to guess with the least number of attempts.
 Player A can only reply to a guess from the other player B with “low”, “high”, or “That is the number”.
 
 **Your task is to create a computer program for Player B.**
+```py.
+import random
+number = random.randint(1,100)
+count = 0
+print("I have chosen a number, please pick a number between 1 -100")
+guess = 50
+print(guess)
+high = "high"
+low = "low"
+upperBoundary = 100
+lowerBoundary = 50
+correct = "that is correct"
+while True:
+    answer = input("Player A")
+    if guess == number:
+        print("That is the number. You complete in {} trials".format(count))
+        break
+    elif guess < number:
+        answer = print(low)
+        count = count + 1
+        guess += abs(round((upperBoundary - lowerBoundary)/2))
+        lowerBoundary = guess
+        upperBoundary = round((upperBoundary+guess)/2)
+        print(guess)
+    else:
+        count = count + 1
+        answer = print(high)
+        guess -= abs(round((upperBoundary - lowerBoundary)/2))
+        upperBoundary = guess
+        lowerBoundary = round((lowerBoundary + guess))
+        print(guess)
+
+```
 
 **Computer program for Player A** 
 ```py.
