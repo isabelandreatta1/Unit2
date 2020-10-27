@@ -8,34 +8,33 @@ Player A can only reply to a guess from the other player B with “low”, “hi
 ```py.
 import random
 number = random.randint(1,100)
-count = 0
-print("I have chosen a number, please pick a number between 1 -100")
-guess = 50
-print(guess)
-high = "high"
-low = "low"
-upperBoundary = 100
-lowerBoundary = 50
-correct = "that is correct"
-while True:
-    answer = input("Player A")
-    if guess == number:
-        print("That is the number. You complete in {} trials".format(count))
-        break
-    elif guess < number:
-        answer = print(low)
-        count = count + 1
-        guess += abs(round((upperBoundary - lowerBoundary)/2))
-        lowerBoundary = guess
-        upperBoundary = round((upperBoundary+guess)/2)
-        print(guess)
-    else:
-        count = count + 1
-        answer = print(high)
-        guess -= abs(round((upperBoundary - lowerBoundary)/2))
-        upperBoundary = guess
-        lowerBoundary = round((lowerBoundary + guess))
-        print(guess)
+number = 42
+def program():
+    count = 0
+    print("I have chosen a number, please pick a number between 1 -100")
+    low = 0
+    high = 100
+    mid = round((low + high)/2)
+    correct = "that is correct"
+    print(mid)
+    while True:
+        answer = input("Player A")
+        if mid == number:
+            print(mid)
+            print("That is the number. You complete in {} trials".format(count))
+            break
+        elif mid < number:
+            print("{} = low ".format(mid))
+            count = count + 1
+            low = mid
+            mid = round((low + high) / 2)
+        else:
+            count = count + 1
+            print('{} = high'.format(mid))
+            print(answer)
+            high = mid
+            mid = round((low + high)/2)
+program()
 
 ```
 
