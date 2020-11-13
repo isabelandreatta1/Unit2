@@ -4,8 +4,14 @@
 ### Justification of the solution 
 
 ### Criteria for success
+1. The display should count from 0-9 
+1. A table showing each number number 0-9 and corresponding LEDs are included 
+1. Information indicating what the buttons do is included
+1. The display uses maximum 7 LEDs and 4 buttons 
 
 ## Criteria B: Design 
+
+### Record of Tasks
 | Task No. | Planned Action                                                                          | Planned Outcome                                        | Time Estimated | Target Completion Date | Criterion |
 |----------|-----------------------------------------------------------------------------------------|--------------------------------------------------------|----------------|------------------------|-----------|
 | 1.       | Planning: Create draft sketches for display.                                            | 3 or more sketches of display options                  |                |                        |           |
@@ -19,9 +25,7 @@
 | 8.       | Development: Connect all the wires                                                      |                                                        |                |                        |           |
 | 9.       | Development: Write the code on the Arduino                                              |                                                        |                |                        |           |
 
-### Testing Plan 
-
-### Record of Tasks 
+### Testing Plan  
 
 ## Criteria C: Development 
 
