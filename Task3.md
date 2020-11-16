@@ -73,3 +73,15 @@ while True:
         print(finaltotal)
         break
   ``` 
+  ## The maximum of the sequence
+  A sequence consists of integer numbers and ends with the number 0. Determine the largest element of the sequence.
+  ```py 
+ numbersList = []
+while True:
+    n = int(input())
+    if n !=0: 
+        numbersList.append(n)
+    else: 
+        break
+print(max(numbersList))
+```
