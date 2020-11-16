@@ -55,6 +55,7 @@ while True:
         total = total + n
     else:
         print(total)
+        break
  ``` 
 ## The average of the sequence
 Determine the average of all elements of the sequence ending with the number 0.
@@ -70,4 +71,5 @@ while True:
     else:
         finaltotal = total/count
         print(finaltotal)
+        break
   ``` 
