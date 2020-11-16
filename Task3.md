@@ -45,3 +45,29 @@ while FirstRun < FinalRun:
     days = days + 1
 print(days)
 ``` 
+## The sum of the sequence
+Determine the sum of all elements in the sequence, ending with the number 0.
+```py
+total = 0
+while True:
+    n = int(input())
+    if n != 0:
+        total = total + n
+    else:
+        print(total)
+ ``` 
+## The average of the sequence
+Determine the average of all elements of the sequence ending with the number 0.
+```py
+count = 0
+total = 0
+
+while True:
+    n = int(input())
+    if n != 0:
+        count = count + 1
+        total = total + n
+    else:
+        finaltotal = total/count
+        print(finaltotal)
+  ``` 
