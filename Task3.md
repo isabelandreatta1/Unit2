@@ -22,4 +22,14 @@ while s **2 <= n:
     print(s**2)
     s = s+1
 ``` 
+## Least divisor
+Given an integer not less than 2. Print its smallest integer divisor greater than 1.
+```py
+n = int(input())
+i = 2 
+while n%i != 0: 
+     i = i+1 
+
+print(i)
+```
 
