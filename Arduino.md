@@ -48,7 +48,6 @@ We are using an Arduino Uno R3 in order to create the LED and button circuit,
 | 8.       | Development: Connect all the wires                                                      |                                                        |                |                        |           |
 | 9.       | Development: Write the code on the Arduino                                              |                                                        |                |                        |           |
 
-### Testing Plan  
 
 ## Criteria C: Development 
 
@@ -120,5 +119,7 @@ void loop()
 *Button Instrunctions* 
 
 ## Criteria D: Functionality 
+
+### Testing Plan  
 
 ## Criteria E: Evaluation 
