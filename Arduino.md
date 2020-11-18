@@ -30,6 +30,10 @@ We are using an Arduino Uno R3 in order to create the LED and button circuit,
 
 *Figure 4. Truth Table* 
 
+<img src="https://github.com/isabelandreatta1/Unit2/blob/main/LED_LIGHT_DIAGRAM.png" width="300" height="200"/>
+                                                                                                            
+*Figure 5. LED-Lights Diagram* 
+
 ### Record of Tasks
 | Task No. | Planned Action                                                                          | Planned Outcome                                        | Time Estimated | Target Completion Date | Criterion |
 |----------|-----------------------------------------------------------------------------------------|--------------------------------------------------------|----------------|------------------------|-----------|
