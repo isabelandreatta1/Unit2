@@ -2,14 +2,18 @@
 ## Criteria A: Planning
 
 ### Context of the problem 
-The customer is looking for an LED display which will count from 0-9. However, there are certain limitations regarding this display: it must use a maximum of 4 buttons and 7 LED lights, using a different dipslay than the typical 7-segment display (which has an 8-like pattern) used in, for example, digital clocks . 
+The customer is looking for an LED display which will count from 0-9. However, there are certain limitations regarding this display: it must use a maximum of 4 buttons and 7 LED lights, using a different dipslay than the typical 7-segment display (which has an 8-like pattern) used in, for example, digital clocks. 
+
+<img src="https://github.com/isabelandreatta1/Unit2/blob/main/Seven_segment_01_Pengo.jpg" width="150" height="150"/>
+*Figure 1. Example of the typical 7-segment dipslay* 
 
 ### Justification of the solution 
 
 
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/Sketches.jpg" width="350" height="500"/>
 
-*Figure 1. Sketches of possible displays* 
+*Figure 2. Sketches of possible displays* 
+
 
 ### Criteria for success
 1. The display should count from 0-9 
