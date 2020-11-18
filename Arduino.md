@@ -10,6 +10,9 @@
 1. The display uses maximum 7 LEDs and 4 buttons 
 
 ## Criteria B: Design 
+![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/IMG_2759.JPG)
+
+*Fig. System Diagram* 
 
 ### Record of Tasks
 | Task No. | Planned Action                                                                          | Planned Outcome                                        | Time Estimated | Target Completion Date | Criterion |
@@ -28,6 +31,53 @@
 ### Testing Plan  
 
 ## Criteria C: Development 
+
+
+```cpp
+int led_a = 13; 
+int led_b = 12;
+int led_c = 11; 
+int led_d = 10; 
+int led_e = 9; 
+int btn_x = 8; 
+int btn_y = 7; 
+
+int btn_w = 6; 
+int btn_z = 5; 
+int val_x = 0; 
+int val_y = 0; 
+int val_w = 0; 
+int val_z = 0; 
+
+void setup()
+{
+  pinMode(led_a, OUTPUT); 
+  pinMode(led_b, OUTPUT); 
+  pinMode(led_c, OUTPUT); 
+  pinMode(led_d, OUTPUT); 
+  pinMode(led_e, OUTPUT); 
+  Serial.begin(9600); 
+}
+
+    
+void loop()
+{
+  val_x = digitalRead(btn_x);
+  val_y = digitalRead(btn_y);
+  val_w = digitalRead(btn_w);
+  val_z = digitalRead(btn_z);
+
+  int a = (!val_z) && (!val_w) && val_y || (!val_z) && (!val_w) && val_x || (!val_x) && (!val_y) && (!val_z) && val_w || val_z && val_w && val_y || val_x && val_y && val_z && (!val_x) && (!val_y) && val_z && (!val_w); 
+  digitalWrite(led_a,a);  
+  int b =  (!val_x) && val_y && (!val_z) && (!val_w) ||  (!val_x) && (!val_y) && (!val_z) && val_w || (!val_x) && val_y && (!val_z) && val_w || (!val_x) && (!val_y) && val_z && (!val_w) || val_x && val_y && val_z && (!val_w); 
+  digitalWrite(led_b,b); 
+  int c = (!val_x) && (!val_y) && (!val_z) && (val_w) || val_y && val_z && val_w || (!val_x) && (!val_y) && val_z && (!val_w) ; 
+  digitalWrite(led_c,c); 
+  int d = val_x && val_y && (!val_z) && (!val_w) || val_x && (!val_y) && (!val_z) && val_w ||  val_y && val_x & val_z || val_x && val_y && val_z ; 
+  digitalWrite(led_d,d); 
+  digitalWrite(led_e,d);  
+}
+```
 
 ## Criteria D: Functionality 
 
