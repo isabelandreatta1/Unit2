@@ -91,6 +91,10 @@ void loop()
 }
 ```
 
+<img src="https://github.com/isabelandreatta1/Unit2/blob/main/Button_Instrunctions.jpg" width="250" height="250"/>
+
+*Button Instrunctions* 
+
 ## Criteria D: Functionality 
 
 ## Criteria E: Evaluation 
