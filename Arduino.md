@@ -98,6 +98,15 @@ void loop()
   digitalWrite(led_e,d);  
 }
 ```
+
+<img src="https://github.com/isabelandreatta1/Unit2/blob/main/DipslayBack.JPG" width="380" height="220"/>
+
+*Display Circuit* 
+
+<img src="https://github.com/isabelandreatta1/Unit2/blob/main/Display%20Front%20View.jpg" width="341" height="187"/>
+
+*Front of Display* 
+
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/Button_Instrunctions.jpg" width="250" height="250"/>
 
 *Button Instrunctions* 
