@@ -107,6 +107,14 @@ void loop()
 
 *Front of Display* 
 
+<img src="https://github.com/isabelandreatta1/Unit2/blob/main/DisplaySide.jpg" width="254" height="264"/>
+
+*Side of Display 1* 
+
+<img src="https://github.com/isabelandreatta1/Unit2/blob/main/DisplaySide2.jpg" width="232" height="194"/>
+
+*Side of Display 2* 
+
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/Button_Instrunctions.jpg" width="250" height="250"/>
 
 *Button Instrunctions* 
