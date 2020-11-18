@@ -3,7 +3,7 @@
 
 ### Justification of the solution 
 
-![Diagram]()
+![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/Sketches.jpg)
 *Figure 1* 
 
 *Figure 2* 
