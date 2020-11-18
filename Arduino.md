@@ -3,6 +3,10 @@
 
 ### Justification of the solution 
 
+![Diagram]()
+*Figure 1* 
+
+*Figure 2* 
 ### Criteria for success
 1. The display should count from 0-9 
 1. A table showing each number number 0-9 and corresponding LEDs are included 
@@ -12,7 +16,7 @@
 ## Criteria B: Design 
 ![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/IMG_2759.JPG)
 
-*Fig. System Diagram* 
+*Figure 3 System Diagram* 
 
 ### Record of Tasks
 | Task No. | Planned Action                                                                          | Planned Outcome                                        | Time Estimated | Target Completion Date | Criterion |
