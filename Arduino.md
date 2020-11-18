@@ -2,11 +2,10 @@
 ### Context of the problem 
 
 ### Justification of the solution 
+<img src="https://github.com/isabelandreatta1/Unit2/blob/main/Sketches.jpg" width="350" height="500"/>
 
-![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/Sketches.jpg)
-*Figure 1* 
+*Figure 1. Sketches of possible displays* 
 
-*Figure 2* 
 ### Criteria for success
 1. The display should count from 0-9 
 1. A table showing each number number 0-9 and corresponding LEDs are included 
