@@ -24,7 +24,11 @@ We are using an Arduino Uno R3 in order to create the LED and button circuit,
 ## Criteria B: Design 
 ![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/IMG_2759.JPG)
 
-*Figure 3 System Diagram* 
+*Figure 3. System Diagram* 
+
+<img src="https://github.com/isabelandreatta1/Unit2/blob/main/TRUTH_TABLE.png" width="450" height="300"/>
+
+*Figure 4. Truth Table* 
 
 ### Record of Tasks
 | Task No. | Planned Action                                                                          | Planned Outcome                                        | Time Estimated | Target Completion Date | Criterion |
@@ -90,7 +94,6 @@ void loop()
   digitalWrite(led_e,d);  
 }
 ```
-
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/Button_Instrunctions.jpg" width="250" height="250"/>
 
 *Button Instrunctions* 
