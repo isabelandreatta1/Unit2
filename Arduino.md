@@ -34,19 +34,19 @@ We are using an Arduino Uno R3 in order to create the LED and button circuit,
                                                                                                             
 *Figure 5. LED-Lights Diagram* 
 
-### Record of Tasks
-| Task No. | Planned Action                                                                          | Planned Outcome                                        | Time Estimated | Target Completion Date | Criterion |
-|----------|-----------------------------------------------------------------------------------------|--------------------------------------------------------|----------------|------------------------|-----------|
-| 1.       | Planning: Create draft sketches for display.                                            | 3 or more sketches of display options                  |                |                        |           |
-| 2.       | Planning: Modify and finalise the display                                               | Final display labelled with figure of counting system  |                |                        |           |
-| 3.       | Planning: Create a digital circuit on Tinkercad  of the Arduino with some of the coding |                                                        |                |                        |           |
-| 3.       | Planning: Create a '' table for the LED lights                                          |                                                        |                |                        |           |
-| 4.       | Planning: Create K-maps and equations for each LED lights (a-e)                         | 5 K-maps and boolean equations for LEDs                |                |                        |           |
-| 5.       | Planning: Create a flowchart and truthtable  for the LEDs                               | 5 flowcharts and truth tables                          |                |                        |           |
-| 6.       | Development: Finish the code for the Arduino and  test it on the Tinkercad simulation   |                                                        |                |                        |           |
-| 7.       | Development: Create the box for the display                                             |                                                        |                |                        |           |
-| 8.       | Development: Connect all the wires                                                      |                                                        |                |                        |           |
-| 9.       | Development: Write the code on the Arduino                                              |                                                        |                |                        |           |
+### Record of Tasks  
+| Task No. | Planned Action                                                                        | Planned Outcome                                                                | Time Estimated | Target Completion Date | Criterion |
+|----------|---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|----------------|------------------------|-----------|
+| 1.       | Planning: Create draft sketches for display.                                          | 3 or more sketches of display options                                          | 30 minutes     | 2nd November           | A         |
+| 2.       | Planning: Modify and finalise the display                                             | Final display labelled with figure of counting system                          | 15 minutes     | 3rd November           | A         |
+| 3.       | Design: Create a digital circuit on Tinkercad  of the Arduino with some of the coding | Draft of code on Tinkercad                                                     | 20 minutes     | 6th November           | B         |
+| 3.       | Design: Create a truth table for the LED lights                                       | Truth Table                                                                    | 10 minutes     | 6th November           | B         |
+| 4.       | Design: Create K-maps and equations for each LED lights (a-e)                         | 5 K-maps and boolean equations for LEDs                                        | 15 minutes     | 7th November           | B         |
+| 5.       | Design: Create a flowchart for the code                                               | 5 flowcharts and truth tables                                                  | 25 minutes     | 8th November           | B         |
+| 6.       | Development: Finish the code for the Arduino and  test it on the Tinkercad simulation | Completed Code in C++ for Arduino which programs the light and button circuit  | 30 minutes     | 9th November           | C         |
+| 7.       | Development: Create the box for the display                                           | A painted standing up display                                                  | 45 minutes     | 10th November          | C         |
+| 8.       | Development: Connect all the wires                                                    | A functioning circuit                                                          | 45 minutes     | 10th November          | C         |
+| 9.       | Development: Write the code on the Arduino                                            | Arduino and circuit that are connected, with a code that works as planned      | 25 minutes     | 13th November          | C         |
 
 
 ## Criteria C: Development 
