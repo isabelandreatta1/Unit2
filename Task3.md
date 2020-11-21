@@ -65,10 +65,15 @@ A peripheral device is an input/output device which is used either for inputting
 ### The customers can also buy books online. A customer can select a book, and then enter their name, address and credit card number. This data is stored on the book shop’s central computer in a database of customer orders.
 
 ### Identify two sources of risk to personal data in this online system. 
+ A possible source of risk to personal data would be data loss from incopetent employee. This is because all the information is stored on one central computer, and by accidentally modifying or deleting information, this will permanently change the data without having a way to check the previous data. Another risk would be in the case of a natural disaster, where all data can be deleted. This is because all data is stored on a local computer, and has no restoration or back-up system. 
+
+(Another plausible risk could be malicious activity, meaning a third party attempts to steal or modify the data through hacking, breaking the computer, or using the central computer for nefarious purposes) 
 
 ### State two measures that the book shop can take to address the risks identified in part (d)
+A measure to address both data loss from a natural disaster and incompetent employees are backups. There are two types of backups the book shop can implement. The first could backup media, in which they store the data on a separate hardware, located in a safe area. They could also perform a cloud-backup, in which all the data is stored on a web-server. This will allow access with any type of hardware/device. The book shop should operate generational backups, therefore always being able to see data’s past history and check for any data transferring errors. 
 
 ### Outline the consequences to the customer if their data is not adequately protected. [2]
+Some consequences include a failed purchase, either by having the incorrect credit card or item not getting delivered by having the incorrect address. There is also a possibility of identity theft; client’s personal information can be stolen and used for malicious purposes. Lastly, the book shop may also lose information on which books are bought and have false information about their inventory. 
 
 
 
