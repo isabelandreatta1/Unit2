@@ -45,7 +45,7 @@ A parallel run for the Matrix system would be the safest option, ensuring that t
 A phased implementation would be the most effective type of transition.  A phased implementation would mean that they would gradually reduce the reliance on the old system, meanwhile also increasing the reliance on the new system. The old system would be shut off once all the necessary information is transferred to the new system. For the Matrix, it would mean that it would allow users to get used to the new system, and also many adjustments can be made to the new system in the transition phase. However, since users do need to use two systems for a while, many of the same limitations of a parallel run would occur (tedious and confusing process, and decentralised data). Fortunately, the time duration of using two systems simultaneously would be shorter than a parallel run. 
 
 ### 5. What would be the consequences of a deficient transition from the old Google Form system to the Matrix, and to the New Matrix Reloaded? What would be the consequences of data loss?   
-- Users stop using the new system because it a. Doesn’t work well b. Not user-friendly
+- Users stop using the new system because it a) Doesn’t work well b) Not user-friendly
 - Can not login (incorrect password) 
 - Incorrect contact details 
 - Not have full records of the users/accounts
