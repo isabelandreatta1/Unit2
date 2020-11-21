@@ -53,6 +53,10 @@ A phased implementation would be the most effective type of transition.  A phase
 ## [HL]
 📔A book shop has a computer at each point of sale, and also a central computer. When a customer buys a book in the book shop, the salesperson at the point of sale uses a scanning device to input a barcode from the book. The barcode is sent to the central computer where the barcode of each book and the corresponding price are held in a database on a disk. When the price is found, it is sent to the point of sale computer where all necessary calculations are performed, details of the transaction are stored on a local disk and a receipt is printed out.
 
+### Construct a system flow chart for the system described above. 
+
+<img src="https://github.com/isabelandreatta1/Unit2/blob/main/Task3.jpg" width="367" height="159"/>
+
 ### At the point of sale there are peripheral devices other than the scanning device and printer.
 
 ### Define peripheral devices
