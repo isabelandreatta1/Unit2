@@ -64,7 +64,7 @@ A phased implementation would be the most effective type of transition.  A phase
 A peripheral device is an input/output device which is used either for inputting,  storing or processing information from a computer. There are three types of peripheral devices based on their purpose. The inputting type include mouses and keyboards (they input information to the computer), the storing type include USBs and SATAs (they store computer’s data into external devices), and output type include headphones and printers (they output information from the computer to another device). 
 
 ### Outline the purpose of one other possible peripheral device in this scenario.
-
+Another purpose of a possible peripheral device could be the hard disk where the prices are all held. This is because it never explicitly said that the hard disk was internal; if it was an external hard disk, it would be considered as a peripheral device (for storage). 
 
 ### The customers can also buy books online. A customer can select a book, and then enter their name, address and credit card number. This data is stored on the book shop’s central computer in a database of customer orders.
 
