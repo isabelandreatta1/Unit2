@@ -2,19 +2,24 @@
 
 ## Day 1 
 ```py. 
-n = input("Please put in the numbers: ")
+n = open('Day1.txt','r').readlines()
 numberList = []
-n.split(" ")
+
+for i in range(len(n)):
+    n[i] = int(n[i])
+
 for i in range(199):
     numberList.append(n[i])
-    i = i+1
     for l in range(199):
-        while int(n[i]) + int(n[l+1])!= 200:
-            l = i+1
-        else:
-            print(n[i] * n[l])
+        if n[i] + n[l+1]== 2020:
+            print(n[i] * n[l+1])
+            exit()
 ``` 
-Answer = []
+Answer to part 1: 444019
+Answer to part 2: 29212176
+
+
+
 
 ## Day 2 
 
