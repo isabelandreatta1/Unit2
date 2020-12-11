@@ -18,6 +18,10 @@ def Makes10():
 
 Makes10()
 ```
+Test: 
+
+<img src="https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Test%201.png" width="264" height="278"/>
+
 ### Flow Chart 
 
 ## Quiz 2
@@ -55,6 +59,9 @@ def intMax():
             print(C)
     intMax()
 ```
+Test: 
+
+<img src="https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Test%202.png" width="574" height="524"/>
 
 ### Flow Chart 
 
@@ -84,6 +91,10 @@ def rangeN():
 
 rangeN()
 ```
+Test: 
+
+<img src="https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Test%203.png" width="366" height="290"/>
+
 ### Flow Chart 
 
 ## Quiz 4
@@ -112,6 +123,10 @@ def perfectN():
     print("Sum of factors is:", count , ",", count == N)
 perfectN()
 ```
+Test: 
+
+<img src="https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Test%204.png" width="432" height="162"/>
+
 ### Flow Chart 
 
 ## Quiz 5
@@ -134,6 +149,10 @@ def TableN():
         print(N,"x",i,"=", multiplication)
 TableN()
 ```
+Test: 
+
+<img src="https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Test%205.png" width="364" height="318"/>
+
 ### Flow Chart 
 
 ## Quiz 6
@@ -153,6 +172,10 @@ def MixStart():
     
 MixStart()
 ```
+Test: 
+
+<img src="https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Test%206.png" width="464" height="192"/>
+
 ### Flow Chart 
 
 ## Quiz 7
@@ -174,6 +197,7 @@ def letters():
 
 letters()
 ```
+<img src="https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Test%207.png" width="296" height="188"/>
 ### Flow Chart 
 
 ## Quiz 8
@@ -203,7 +227,7 @@ def maxAbs():
 
 maxAbs()
 ```
-
+<img src="https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Test%208.png" width="512" height="184"/>
 ### Flow Chart 
 
 ## Quiz 9
@@ -238,5 +262,5 @@ def missingNumber():
 
     missingNumber()
 ```
-
+<img src="https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Test%209.png" width="722" height="240"/>
 ### Flow Chart 
