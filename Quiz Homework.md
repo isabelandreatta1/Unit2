@@ -2,6 +2,7 @@
 Solve them again, program them, draw flow diagram, test them. Add it to your repo for Unit 2
 
 ## Quiz 1 
+Given 2 numbers, A and B, Output TRUE if one if them is 10 or if their sum is 10.
 
 ### Pseudo Code 
 ```
@@ -26,6 +27,7 @@ Test:
 ![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/FlowChart%201.png) 
 
 ## Quiz 2
+Given three int values, A, B, and C, output the largest.
 
 ### Pseudo Code 
 ```
@@ -69,6 +71,9 @@ Test:
 ![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Flowchart%202.png) 
 
 ## Quiz 3
+Given an integer N, print all the integers from 0 to N. 
+
+[HL] show also the addition of the numbers.
 
 ### Pseudo Code 
 ```
@@ -103,6 +108,9 @@ Test:
 ![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Flowchart%203.png)
 
 ## Quiz 4
+Given an integer N, show all its factors. 
+
+[HL] show also the addition of the factors show if the result is the same as N
 
 ### Pseudo Code 
 ```
@@ -137,6 +145,7 @@ Test:
 ![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Flowchart%204.png)
 
 ## Quiz 5
+Given an integer N, show the multiplication table. 
 
 ### Pseudo Code 
 ```
@@ -165,6 +174,7 @@ Test:
 ![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Flowchart%205.png)
 
 ## Quiz 6
+Output TRUE if the given string begins with 'mix', except the 'm' can be anything, so 'pix', '9ix'..all count.
 
 ### Pseudo Code 
 ```
@@ -190,6 +200,7 @@ Test:
 ![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Flowchart%206.png)
 
 ## Quiz 7
+Given a string, output each letter with its index:
 
 ### Pseudo Code 
 ```
@@ -209,9 +220,13 @@ def letters():
 letters()
 ```
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Test%207.png" width="296" height="188"/>
+
 ### Flow Chart 
+
 ![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Flowchart%207.png)
+
 ## Quiz 8
+Given an array of integers, find the largest absolute value.  Tip: you can use the abs() function.
 
 ### Pseudo Code 
 ```
@@ -239,9 +254,13 @@ def maxAbs():
 maxAbs()
 ```
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Test%208.png" width="512" height="184"/>
+
 ### Flow Chart 
+
 ![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Flowchart%208.png)
+
 ## Quiz 9
+Given an array of sorted integers, find the missing number.
 
 ### Pseudo Code 
 ```
