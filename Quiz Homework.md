@@ -237,6 +237,7 @@ maxAbs()
 Function missingNumber(array) 
 correctnumber = 0 
 loop i from 0 to length.array-1
+	number = array[i]
 	if number == correctnumber:
 		correctnumber += 1
 	else:
