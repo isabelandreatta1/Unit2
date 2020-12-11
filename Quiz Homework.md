@@ -23,6 +23,7 @@ Test:
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Test%201.png" width="264" height="278"/>
 
 ### Flow Chart 
+![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/FlowChart%201.png) 
 
 ## Quiz 2
 
@@ -61,9 +62,11 @@ def intMax():
 ```
 Test: 
 
-<img src="https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Test%202.png" width="574" height="524"/>
+<img src="https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Test%202.png" width="300" height="320"/>
 
 ### Flow Chart 
+
+![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Flowchart%202.png) 
 
 ## Quiz 3
 
@@ -97,6 +100,8 @@ Test:
 
 ### Flow Chart 
 
+![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Flowchart%203.png)
+
 ## Quiz 4
 
 ### Pseudo Code 
@@ -129,6 +134,8 @@ Test:
 
 ### Flow Chart 
 
+![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Flowchart%204.png)
+
 ## Quiz 5
 
 ### Pseudo Code 
@@ -155,6 +162,8 @@ Test:
 
 ### Flow Chart 
 
+![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Flowchart%205.png)
+
 ## Quiz 6
 
 ### Pseudo Code 
@@ -178,6 +187,8 @@ Test:
 
 ### Flow Chart 
 
+![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Flowchart%206.png)
+
 ## Quiz 7
 
 ### Pseudo Code 
@@ -199,7 +210,7 @@ letters()
 ```
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Test%207.png" width="296" height="188"/>
 ### Flow Chart 
-
+![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Flowchart%207.png)
 ## Quiz 8
 
 ### Pseudo Code 
@@ -229,7 +240,7 @@ maxAbs()
 ```
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Test%208.png" width="512" height="184"/>
 ### Flow Chart 
-
+![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Flowchart%208.png)
 ## Quiz 9
 
 ### Pseudo Code 
@@ -265,3 +276,4 @@ def missingNumber():
 ```
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Test%209.png" width="722" height="240"/>
 ### Flow Chart 
+![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Flowchart%209.png)
