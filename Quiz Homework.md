@@ -240,18 +240,15 @@ largestnumber = 0
 end function 
 ```
 ### Python Code 
-
 ```py
-def maxAbs():
+def maxAbs(array):
     largestnumber = 0
-    stringinput = input("Please input array ")
-    array = list(map(int, stringinput.split(' ')))
     for i in range(len(array)):
         if abs(int(array[i])) > largestnumber:
             largestnumber = abs(int(array[i]))
-    print("max absolute is", largestnumber)
+    return(largestnumber)
 
-maxAbs()
+print(maxAbs(array = [-4,5,6,-7]))
 ```
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Test%208.png" width="512" height="184"/>
 
