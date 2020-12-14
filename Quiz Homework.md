@@ -278,21 +278,20 @@ end function
 ```
 ### Python Code 
 
-```py
-def missingNumber():
-    stringinput = input("Please input array ")
-    array = list(map(int, stringinput.split(' ')))
+def MissingNumber(array):
     correctnumber = array[0]
     for i in range(len(array)):
         number = array[i]
         if number == correctnumber:
             correctnumber += 1
         else:
-            print(correctnumber)
+            return(correctnumber)
             break
 
-    missingNumber()
-```
+print(MissingNumber(array = [1,2,3,5,6,7,8,9]))
+print(MissingNumber(array = [4,5,6,8,9,10]))
+print(MissingNumber(array = [73,74,75,76,78,79]))
+
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Test%209.png" width="722" height="240"/>
 ### Flow Chart 
 ![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Flowchart%209.png)
