@@ -277,7 +277,7 @@ end loop
 end function 
 ```
 ### Python Code 
-
+```py
 def MissingNumber(array):
     correctnumber = array[0]
     for i in range(len(array)):
@@ -291,7 +291,29 @@ def MissingNumber(array):
 print(MissingNumber(array = [1,2,3,5,6,7,8,9]))
 print(MissingNumber(array = [4,5,6,8,9,10]))
 print(MissingNumber(array = [73,74,75,76,78,79]))
+``` 
 
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Test%209.png" width="722" height="240"/>
+
 ### Flow Chart 
+
 ![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Flowchart%209.png)
+
+## Quiz 10
+
+### Pseudo Code 
+
+### Python 
+```py
+def BigNeighbour(numbers):
+    largestdifference = 0
+    for i in range(0, len(numbers)-1):
+        difference = abs(numbers[i] - numbers[i + 1])
+        if difference > largestdifference:
+            largestdifference = difference
+    return largestdifference
+
+print(BigNeighbour(numbers = [1,2,3,4,5,7]))
+```
+
+### Flowchart 
