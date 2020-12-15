@@ -79,4 +79,32 @@ print(validpasswordcounter)
 ``` 
 Answer to part 2: 626
 
+## Day 4
+```py 
+passwords = open('Day4.txt','r').readlines()
+
+validpasswords = 0
+fieldscounter = 0
+wantedfields = ('byr','iyr', 'eyr','hgt','hcl','ecl', 'pid')
+wantedfieldscounter = 0
+
+for line in passwords:
+    line = line.strip()
+    if len(line) != 0:
+        for fields in wantedfields:
+            if fields in line:
+                fieldscounter += 1
+        print("{}, fields {}".format(line, fieldscounter))
+
+    else:
+        if fieldscounter == 7:
+            wantedfieldscounter += 1
+            print("valid ID = ",wantedfieldscounter)
+        fieldscounter = 0
+        print('\n new line')
+
+print(wantedfieldscounter)
+```
+Answer 1: 196 
+
 
