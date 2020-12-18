@@ -5,7 +5,7 @@
 1. Development 
 1. Evaluation 
 
-## Planning 
+## Criteria A: Planning 
 ### Identified Problem 
 The client has asked to create a communication system which will send messages from the moon to Earth and vice versa. The station on Earth is able to read Morse code and the station on the moon is able to read in binary. We have to create the communication system for the Earth, which is able to input English, and output in Binary, and is also able to translate morse code to English. The use will have to manually input in English and in morse code, but the sending of the messsage and the translation should be automated. The client has also specificed some material limitations: only using two buttons, an LCD screen for the display, and an arduino. 
 
@@ -34,10 +34,14 @@ Based on the conversation we  had with the client, these were the success criter
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/Pictures/Tinkercad.png" width="712" height="357"/>
 *Figure : Our Tinkercad prototype including both hardware and code* 
 
-## Design 
+## Criteria B: Design 
 
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/Pictures/System%20Diagram.jpg" width="744.8" height="295.2"/>
 
-## Development 
+*Figure : System Diagram* 
 
-## Evaluation 
+## Criteria C: Development 
+
+## Criteria D: Functionality 
+
+## Criteria E: Evaluation 
