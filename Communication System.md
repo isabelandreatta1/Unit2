@@ -29,9 +29,14 @@ Based on the conversation we  had with the client, these were the success criter
 1. Must be able to carry out the commands delete, error, acknowledge, send and SOS 
 1. Must be able to send at least 10 words per minute  
 
+<img src="https://github.com/isabelandreatta1/Unit2/blob/main/Pictures/Communication%20System%20Draft.jpg" width="401" height="537"/>
+
+*Figure : Communication System Design Draft* 
+
 ### Tinkercad Prototype 
 
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/Pictures/Tinkercad.png" width="712" height="357"/>
+
 *Figure : Our Tinkercad prototype including both hardware and code* 
 
 ## Criteria B: Design 
