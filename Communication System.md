@@ -1,5 +1,5 @@
 # Communication System Project 
-Contents: 
+**Contents:** 
 1. Planning
 1. Design 
 1. Development 
