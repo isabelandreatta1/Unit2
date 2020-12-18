@@ -32,8 +32,11 @@ Based on the conversation we  had with the client, these were the success criter
 ### Tinkercad Prototype 
 
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/Pictures/Tinkercad.png" width="712" height="357"/>
+*Figure : Our Tinkercad prototype including both hardware and code* 
 
 ## Design 
+
+<img src="https://github.com/isabelandreatta1/Unit2/blob/main/Pictures/System%20Diagram.jpg" width="744.8" height="295.2"/>
 
 ## Development 
 
