@@ -73,17 +73,12 @@ We used Tinkercad to create our prototype. Tinkercad is an online 3D modelling p
 
 *Figure : System Diagram* 
 
-| Test No. | Procedure | Inputs | Expected Output | Success Criteria                                                                |
-|----------|-----------|--------|-----------------|---------------------------------------------------------------------------------|
-| 1        |           |        |                 | Must allow the user to enter English and output in binary                       |
-| 2        |           |        |                 | Must allow the user to enter either morse code and output to English            |
-| 3        |           |        |                 | Must be able to carry out the commands delete, error, acknowledge, send and SOS |
-| 4        |           |        |                 | Must be able to send at least 10 words per minute                               |
-
 ## Criteria C: Development 
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/Pictures/English%20to%20Binary%20Flowchart.png" width="430" height="940"/>
 
 *Figure : Flow Diagram of the English to Binary* 
+
+### Completed Code 
 
 ```py
 #include <LiquidCrystal.h>
@@ -255,4 +250,21 @@ void dcl_R() {
 
 ## Criteria D: Functionality 
 
+This is a video
+
 ## Criteria E: Evaluation 
+
+### Alpha Testing 
+
+| Test No. | Procedure | Inputs | Expected Output | Success Criteria                                                                |
+|----------|-----------|--------|-----------------|---------------------------------------------------------------------------------|
+| 1        |           |        |                 | Must allow the user to enter English and output in binary                       |
+| 2        |           |        |                 | Must allow the user to enter either morse code and output to English            |
+| 3        |           |        |                 | Must be able to carry out the commands delete, error, acknowledge, send and SOS |
+| 4        |           |        |                 | Must be able to send at least 10 words per minute                               |
+
+### Limitations and Further Improvements 
+
+**Limitations** 
+
+**Further Improvements** 
