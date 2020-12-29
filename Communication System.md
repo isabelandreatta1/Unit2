@@ -13,13 +13,13 @@ The client has asked to create a communication system which will send messages f
 ### Proposed Solution 
 Our proposed solution is to create a circuit using an Arduinom with C++. We will also use a large lightbulb to indicate the binary code, and the LCD screen to display the English and morse code. The way the user will input English is by having a screen with the alphabet, and starting from the middle and moving towards the edge of the screen, will blink two letters at the same time. Once the letter desired is blinking, the user is able to press either the left button or right button to indicate which letter to print. Depending on different button-press combinations, the arduino will interpret different commands. For example, my pressing the right button-combination, the device will change from English mode to morse mode, where the user can input morse code and translate it to English. 
 
-**Justification**
+### Justification 
 
 **Arduino** 
 
-We are using an arduino set because, despite it being small and portable, has a lot of potential power -- it is a very popular hard-ware used when creating a new device because of it's accessibility and also flexibility in projects. It's accessibility is due to its simple circuit system, needing only to be plugged in with a computer via USB, and because it uses C++. C++, while a more difficult langauge than Python, is still understandable to a beginner student and it gives you more control (for instance, memory management). Also, C++ is a very common langauge, with many platforms and applications written in C++ and also with many learning-resources available online. 
+We are using an arduino set because, despite it being small and portable, has a lot of potential power -- it is a very popular hard-ware used when creating a new device because of it's accessibility and also flexibility. It's accessibility is due to its simple circuit system, needing only to be plugged in with a computer via USB, and because it uses C++. We have had previous experience with Python so it might have seemed simpler to create a program with a language we are already familar with, however, C++ is mostly used for developing hardware while Python has a more general use, so C++ seemed like a better option. In addition, although C++ is a more difficult langauge than Python, it is still understandable to a beginner student and it gives you more control (for instance, memory management). The fact that it is a more low-level language (hence why it gives more control but also is more difficult), means that it works faster than Python. Low-level language means that it is a programming language with syntax more understandable to a computer, while a high-level language like Python, means that the syntax is more accessible to people, but is slower because the computer needs to do more tasks to understand. Also, another pro for C++ is that it is a very common langauge, with many platforms and applications written in C++ and also with many learning-resources available online. This means that while we don't have any previous experience with C++, it makes it easy for us to learn, and also it makes our project accessible to larger community.
 
-**Why our specific design?** 
+**Our Design** 
 
 We decided to 
 
