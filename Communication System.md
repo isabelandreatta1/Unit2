@@ -1,10 +1,10 @@
 # Communication System Project 
 **Contents:** 
-1. <https://github.com/isabelandreatta1/Unit2/blob/main/Communication%20System.md#criteria-a-planning>
-
-1. Design 
-1. Development 
-1. Evaluation 
+1. [Planning](https://github.com/isabelandreatta1/Unit2/blob/main/Communication%20System.md#criteria-a-planning)
+1. [Design](https://github.com/isabelandreatta1/Unit2/blob/main/Communication%20System.md#criteria-b-design)
+1. [Development](https://github.com/isabelandreatta1/Unit2/blob/main/Communication%20System.md#criteria-c-development)
+1. [Functionality](https://github.com/isabelandreatta1/Unit2/blob/main/Communication%20System.md#criteria-d-functionality) 
+1. [Evaluation](https://github.com/isabelandreatta1/Unit2/blob/main/Communication%20System.md#criteria-e-evaluation) 
 
 ## Criteria A: Planning 
 ### Identified Problem 
