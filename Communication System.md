@@ -73,6 +73,13 @@ We used Tinkercad to create our prototype. Tinkercad is an online 3D modelling p
 
 *Figure : System Diagram* 
 
+| Test No. | Procedure | Inputs | Expected Output | Success Criteria                                                                |
+|----------|-----------|--------|-----------------|---------------------------------------------------------------------------------|
+| 1        |           |        |                 | Must allow the user to enter English and output in binary                       |
+| 2        |           |        |                 | Must allow the user to enter either morse code and output to English            |
+| 3        |           |        |                 | Must be able to carry out the commands delete, error, acknowledge, send and SOS |
+| 4        |           |        |                 | Must be able to send at least 10 words per minute                               |
+
 ## Criteria C: Development 
 ```py
 #include <LiquidCrystal.h>
