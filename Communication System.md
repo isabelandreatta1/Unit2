@@ -11,7 +11,7 @@
 The client has asked to create a communication system which will send messages from the moon to Earth and vice versa. The station on Earth is able to read Morse code and the station on the moon is able to read in binary. We have to create the communication system for the Earth, which is able to **input English**, and **output in Binary**, and is also able to **translate morse code to English**. The user will have to manually input in English and in morse code, but the sending of the messsage and the translation should be automated. The client has also specificed some material limitations: only using two buttons, an LCD screen for the display, and an arduino. 
 
 ### Proposed Solution 
-Our proposed solution is to create a circuit using an Arduinom with C++. We will also use a large lightbulb to indicate the binary code, and the LCD screen to display the English and morse code. The way the user will input English is by having a screen with the alphabet, and starting from the middle and moving towards the edge of the screen, will blink two letters at the same time. Once the letter desired is blinking, the user is able to press either the left button or right button to indicate which letter to print. The first screen would display the letters A-P, the second screen (accessible via specific-button-pattern) will display the rest of the alphabet, and puncutation. And finally, the last screen would display the numbers 0-9 and some immediate commands such as delete, error, SOS, and aknowledge. Depending on different button-press combinations, the arduino will interpret different commands. For example, by pressing the right button-combination, the device will change from English mode to morse mode, where the user can input morse code and translate it to English. 
+Our proposed solution is to create a circuit using an Arduinom with C++. We will also use a large lightbulb to indicate the binary code, and the LCD screen to display the English and morse code. The way the user will input English is by having a screen with the alphabet, and starting from the middle and moving towards the edge of the screen, will blink two letters at the same time. Once the letter desired is blinking, the user is able to press either the left button or right button to indicate which letter to print. The first screen would display the letters A-P, the second screen (accessible via specific-button-pattern) will display the rest of the alphabet, and puncutation. And finally, the last screen would display the numbers 0-9 and some immediate commands such as delete, error, SOS, and acknowledge. Depending on different button-press combinations, the arduino will interpret different commands. For example, by pressing the right button-combination, the device will change from English mode to morse mode, where the user can input morse code and translate it to English. 
 
 ### Justification 
 
@@ -23,12 +23,34 @@ We are using an arduino set because, despite it being small and portable, has a 
 
 After our first consultation with our client, we were informed that he prioritised minimising number of button presses over amount of time spent. This heavily shaped our deisgn, coming up with the final decision of displaying all the letters and automating the navigation on the screen using the blinking-letters, instead of making the user manually pressing the buttons. By making the letters blink and automating the nagivation process, it would radically cut-down the number of button presses, with a majority of each word taking either the same number of button presses as number of letters, with perhaps a few additional presses due to needing to access a different screen.  
 
+### Feasibility Report 
+
+Technical Feasibility: Is there existing technology sufficient to implement the proposed system? 
+
+There is plenty of existing technology that can send messages in English to binary, however, none which fit our client's specific limitations (two buttons),, in addition to merging the english-to-binary feature and morse-to-english feature. 
+
+Economic Feasibility: Is the proposed system cost-effective? 
+
+Our proposed solution only uses a basic arduino building set, and a laptop to power it. This makes it very cost-effective and accessible. 
+
+Legal Feasibility: Any conflicts between proposed system and regulations/laws? 
+
+No conflicts because we are not looking into getting our device copyrighted or patented, it's purpose is to remain small-scale. 
+
+Operational Feasibility: Are the existing organisational practices and procedures sufficient to support the operation of the new proposed system? 
+
+Yes, they are sufficient since the project is only aimed for short-term use, as well as its basic functions will be accessible to anyone who has limited knowledge on the Arduino. We are keeping track and documenting our process so if there is any need to revisit the project for the future, it will be easier to understand. 
+
+Schedule Feasibility: How long will we wait? 
+
+The project due date was by end of Dececmber 2020, which means that the development of this project will only span a couple of months.  
+
 ### Success Criteria 
 Based on a further conversation we had with the client, these were the success criteria agreed upon: 
 
 1. Must use one LCD, one arduino, two buttons, and one LED 
 1. Must include a table which informs the operator with the instructions 
-1. Must allow the user to enter Englishs and output in  binary 
+1. Must allow the user to enter English and output in  binary 
 1. Must allow the user to enter either morse code and output to English
 1. Must be able to carry out the commands delete, error, acknowledge, send and SOS 
 1. Must be able to send at least 10 words per minute  
