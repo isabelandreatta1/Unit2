@@ -81,6 +81,10 @@ We used Tinkercad to create our prototype. Tinkercad is an online 3D modelling p
 | 4        |           |        |                 | Must be able to send at least 10 words per minute                               |
 
 ## Criteria C: Development 
+<img src="https://github.com/isabelandreatta1/Unit2/blob/main/Pictures/English%20to%20Binary%20Flowchart.png" width="430" height="940"/>
+
+*Figure : Flow Diagram of the English to Binary* 
+
 ```py
 #include <LiquidCrystal.h>
 
