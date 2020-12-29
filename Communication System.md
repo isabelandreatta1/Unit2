@@ -25,23 +25,23 @@ After our first consultation with our client, we were informed that he prioritis
 
 ### Feasibility Report 
 
-Technical Feasibility: Is there existing technology sufficient to implement the proposed system? 
+**Technical Feasibility: Is there existing technology sufficient to implement the proposed system?**
 
 There is plenty of existing technology that can send messages in English to binary, however, none which fit our client's specific limitations (two buttons),, in addition to merging the english-to-binary feature and morse-to-english feature. 
 
-Economic Feasibility: Is the proposed system cost-effective? 
+**Economic Feasibility: Is the proposed system cost-effective?** 
 
 Our proposed solution only uses a basic arduino building set, and a laptop to power it. This makes it very cost-effective and accessible. 
 
-Legal Feasibility: Any conflicts between proposed system and regulations/laws? 
+**Legal Feasibility: Any conflicts between proposed system and regulations/laws?**  
 
 No conflicts because we are not looking into getting our device copyrighted or patented, it's purpose is to remain small-scale. 
 
-Operational Feasibility: Are the existing organisational practices and procedures sufficient to support the operation of the new proposed system? 
+**Operational Feasibility: Are the existing organisational practices and procedures sufficient to support the operation of the new proposed system?**  
 
 Yes, they are sufficient since the project is only aimed for short-term use, as well as its basic functions will be accessible to anyone who has limited knowledge on the Arduino. We are keeping track and documenting our process so if there is any need to revisit the project for the future, it will be easier to understand. 
 
-Schedule Feasibility: How long will we wait? 
+**Schedule Feasibility: How long will we wait?**  
 
 The project due date was by end of Dececmber 2020, which means that the development of this project will only span a couple of months.  
 
