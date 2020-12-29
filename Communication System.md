@@ -1,6 +1,6 @@
 # Communication System Project 
 **Contents:** 
-1. <https://github.com/isabelandreatta1/Unit2/blob/main/Communication%20System.md#<criteria-a-planning>
+1. <https://github.com/isabelandreatta1/Unit2/blob/main/Communication%20System.md#criteria-a-planning>
 
 1. Design 
 1. Development 
