@@ -104,13 +104,27 @@ lcd.setCursor(0, 0);
 ``` 
 
 **Blinking letters** 
+
 The next step was to make the letters blink. We chose to make the first letter in the middle blink and then have to letters blink simultaneously, moving towards the edge of the screen. Below is a demonstration on how that would look: 
 
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/Pictures/ezgif.com-gif-maker.gif" width="184" height="147" /> 
 
+*Note: Example above only demonstrates with four letters, we would apply this concept with all 16 characters* 
+
+In order to do that, we created two seperate functions, one for the blinking off the lights and one for blinking on the lights. This made it easier to follow within our void loop. Since we would have to make two letters blink simultaneously, we created two variables: ```pos_l``` and ```pos_r```. ``Pos_l``, short for position left, would make the left side of the letters blink, while ```pos_r``` would make the right side of the letters blink. Our letters start flashing from the middle of our screen, which means our initial positions are the characters on column 7 and 8. The blinking off function just replaced the character with an empty string, and had a delay of 200 milliseconds. Next, the blink on function would use the variable d (first defined as 0) and find the module of d and 8 and find the next position. It then print the letter again and has another delay of 200 milliseconds. If it were on the left, then it would have to subtract position, and if it were on the right, then it would have to add position. The last step is to bring both functions together in a void loop. If the mod of the iterations of both functions with 6 is 0, then d would increase by 1. The reason why we need to find the mod of iterations with 6 is because.... 
+
+### FINISH THIS SECTION 
+
 Code for blinking letters: 
+
 ```cpp 
-void blinkon(){
+
+int pos_l = 7;
+int pos_r = 8;
+int d=0;
+int it=0;
+
+void blinkoff(){
   	lcd.setCursor(pos_l - (d%8), 0);
   	lcd.print(" ");
   	lcd.setCursor(pos_r + (d%8), 0);
@@ -118,7 +132,7 @@ void blinkon(){
   	delay(200); 
 }
 
-void blinkoff(){
+void blinkon(){
   lcd.setCursor(pos_l - (d%8), 0);
   lcd.print(letters[pos_l - (d%8)]);    
   lcd.setCursor(pos_r + (d%8), 0);
@@ -131,15 +145,22 @@ void loop() {
       d+=1;
   }
 
-  blinkon();
-  blinkoff(); 
+  blinkoff();
+  blinkon(); 
   it+=1;
 ``` 
 
 **Selecting Letters** 
 
+Now that we have both a screen and a way to navigate through the letters, we need a way to select and print a message. This section has two main tasks: printing the message and deleting a letter. One click left selects the left blinking letter, one click right selects the right blinking letter, and a double click right will delete the letter. We will also be using double-left click, but we can ignore that for now since it is not relevant for this section. 
+
+For sending the message, it checks if the button has been pressed twice. If it has been pressed only twice (checked if the variable for button press is larger than 1), then it will recall the double-click function. If not, then it will concatenate (or join) the blinking letter to the message. We first defined the messsage as an empty string, but once it is concatenated with a letter, then it will become a full message. 
+
+If instead the right button has been pressed twice, then it will recall the delete function. The delete function, we use the ```delete()``` method to decrease the length of the message by one letter. Then, we reprint the messsage without the incorrect letter. 
+
 Code for Selecting Letters: 
 ```cpp 
+String msg = "";
   void L_Button() {
     if (it-last_bpl<=1 && it>0) {
       Serial.print("double click ");
@@ -168,10 +189,71 @@ Code for Selecting Letters:
     }
   }
   
+ //Double-click left -> Delete letter
+void dcl_L() {
+  msg.remove(msg.length()-1);
+  msg.remove(msg.length()-1);
+  
+  lcd.setCursor(msg.length()+1, 1);
+  lcd.print(" ");
+  
+  lcd.setCursor(msg.length(), 1);
+  lcd.print(" ");
+  
+  lcd.setCursor(0, 1);
+  lcd.print(msg);
+}
+
 ```
 
 ### Input message and convert to Binary 
 
+
+```cpp
+//Double-click right -> Send message
+void dcl_R() {
+  to_send = msg;
+  for (int i =0; i< msg.length()-1; i++){
+    char msgchar = msg.charAt(i);
+    Serial.print(msgchar);
+    String binary = String(msgchar-65,BIN);
+    Serial.println(binary +" break ");
+    Serial.println(binary.length());  
+    for (int x=0; x<binary.length(); x++){
+     
+      if (binary[x] == '0'){
+        Serial.println("Zero");
+		digitalWrite(led,LOW); 
+        delay(50000);  
+      	digitalWrite(led,HIGH); 
+  		delay(10000); 
+  		digitalWrite(led,LOW); 
+      	delay(1000); 
+        }
+      if (binary[x] =='1'){
+      	Serial.println("One");
+      	digitalWrite(led, HIGH);
+ 	 	delay(50000); 
+  		digitalWrite(led,LOW);
+        delay(10000); 
+        digitalWrite(led,HIGH); 
+  		delay(10000); 
+  		digitalWrite(led,LOW); 
+      	delay(10000);
+       }
+  	}
+  }
+  
+  to_send.remove(to_send.length()-1);
+  msg = "";
+  
+  for (int i=0; i<=to_send.length()+1; i++){
+    lcd.print(" ");
+    lcd.setCursor(0+i, 1);
+  	lcd.print(" ");
+  }
+  ``` 
+  
 ### Input Morse code and output English translation 
 
 ### Completed Code 
@@ -227,7 +309,7 @@ void setup() {
 }
 
   
-void blinkon(){
+void blinkoff(){
   	lcd.setCursor(pos_l - (d%8), 0);
   	lcd.print(" ");
   	lcd.setCursor(pos_r + (d%8), 0);
@@ -235,7 +317,7 @@ void blinkon(){
   	delay(200); 
 }
 
-void blinkoff(){
+void nextletter(){
   lcd.setCursor(pos_l - (d%8), 0);
   lcd.print(letters[pos_l - (d%8)]);    
   lcd.setCursor(pos_r + (d%8), 0);
@@ -248,8 +330,8 @@ void loop() {
       d+=1;
   }
 
-  blinkon();
-  blinkoff(); 
+  blinkoff();
+  blinkon(); 
   it+=1;
 
 }
