@@ -75,14 +75,108 @@ We used Tinkercad to create our prototype. Tinkercad is an online 3D modelling p
 
 *Figure 3: System Diagram* 
 
-## Criteria C: Development 
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/Pictures/English%20to%20Binary%20Flowchart.png" width="430" height="940"/>
 
 *Figure 4: Flow Diagram of the English to Binary* 
 
+## Criteria C: Development 
+
+We spent most time working on the development since it is the bulk of the project and the most technically challenging section. We worked on the major functions incrementally, working first on the simpler jobs and then branching into the more difficult. Below is documentation of the process of our device's development.
+
+### Input English and print a messsage 
+
+**Displaing the letters** 
+
+This was the first elementary step we had to take in order to start off our project. We had ideated our initial draft, knowing that the basic function of inputting English would be based on a blinking light and then choosing it based on pressing left or right. The LCD (Liquid Crystal Display), or our screen, can only display two rows of 16 characters, meaning that we had very limited space and could not fit all of our commands at once. We wanted to keep the bottom row for displaying the message, this way the user can see what they are typing. This meant we only had to use the top row for displaying characters. We created the display of characters, or key, by creating a char, or a data type which stores multiple characters. On our code, it would look like this: ```char letters[17] = "ABCDEFGHIJKLMNOP";``` Since C++ is a low-level language, we need to specify the type of variable and also the number of characters. We created a for loop inside our setup which printed every letter inside our 'letters' variable starting from the first row and first column of our display. So whenever you turned on the device, the first thing it would show you the first 16 letters of the alphabet. 
+
+For displaying text, you can use some default methods such as: 
+- ```lcd.setCursor(0, 0) ```: Starts the text on the first row and first column. The 0,0 in parenthesis marks the location of the character. 
+- ```lcd.print()```: Prints the text inside the parenthesis 
+
+Code for displaying the letters: 
+```cpp 
+char letters[17] = "ABCDEFGHIJKLMNOP";
+void setup(){
+lcd.setCursor(0, 0);
+  for (int i=0; i<sizeof(letters)-1; i++) {
+  	lcd.print(letters[i]);}
+  }
+``` 
+
+**Blinking letters** 
+The next step was to make the letters blink. We chose to make the first letter in the middle blink and then have to letters blink simultaneously, moving towards the edge of the screen. Below is a demonstration on how that would look: 
+
+<img src="https://github.com/isabelandreatta1/Unit2/blob/main/Pictures/ezgif.com-gif-maker.gif" width="184" height="147" /> 
+
+Code for blinking letters: 
+```cpp 
+void blinkon(){
+  	lcd.setCursor(pos_l - (d%8), 0);
+  	lcd.print(" ");
+  	lcd.setCursor(pos_r + (d%8), 0);
+  	lcd.print(" ");
+  	delay(200); 
+}
+
+void blinkoff(){
+  lcd.setCursor(pos_l - (d%8), 0);
+  lcd.print(letters[pos_l - (d%8)]);    
+  lcd.setCursor(pos_r + (d%8), 0);
+  lcd.print(letters[pos_r + (d%8)]);
+  delay(200);
+}
+
+void loop() {
+  if (it%6 == 0 && it>0) {
+      d+=1;
+  }
+
+  blinkon();
+  blinkoff(); 
+  it+=1;
+``` 
+
+**Selecting Letters** 
+
+Code for Selecting Letters: 
+```cpp 
+  void L_Button() {
+    if (it-last_bpl<=1 && it>0) {
+      Serial.print("double click ");
+      dcl_L();
+    }
+      
+    else {
+      msg.concat(letters[pos_l-(d%8)]);
+      lcd.setCursor(0, 1);
+      lcd.print(msg); 
+      last_bpl = it;
+    }
+  }
+  
+  void R_Button() {
+    if (it-last_bpr<=1 && it>0) {
+      Serial.print("double click");
+      dcl_R();
+    }
+    
+    else {
+    	msg.concat(letters[pos_r+(d%8)]);
+    	lcd.setCursor(0, 1);
+    	lcd.print(msg);
+    	last_bpr = it;
+    }
+  }
+  
+```
+
+### Input message and convert to Binary 
+
+### Input Morse code and output English translation 
+
 ### Completed Code 
 
-```py
+```cpp
 #include <LiquidCrystal.h>
 
 // initialize the library with the numbers of the interface pins
@@ -159,7 +253,7 @@ void loop() {
   it+=1;
 
 }
-    
+   
   void L_Button() {
     if (it-last_bpl<=1 && it>0) {
       Serial.print("double click ");
