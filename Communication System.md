@@ -251,6 +251,23 @@ void dcl_R() {
 ```
 
 ## Criteria D: Functionality 
+### Instruction Table for Communication System 
+
+|                                     Command:                                     | Instruction                               | Left Button: | Right Button: |
+|:--------------------------------------------------------------------------------:|-------------------------------------------|:------------:|:-------------:|
+| Select left blinking letter                                                      | 1 Left press                              |       0     |       X     |
+| Select right blinking letter                                                     | 1 Right press                             |       X      |       0       |
+| Send Message                                                                     | 2 Right presses                           |       X      |     (2) 0     |
+| Delete letter from message                                                       | 2 Left presses                            |     (2) 0    |       X       |
+| Change mode of the device (from English input to translate Morse or vice versa ) | 1 Press of both buttons  at the same time |       0      |       0       |
+| Input Morse code dot                                                             | 1 Left press under 1  second              | 0 < 1 second |       X       |
+| Input Morse code dash                                                            | 1 Left press above 1  1second             | 0 > 1 second |       X       |
+| Translate Morse code to English                                                  | 1 Right press                             |       X      |       0       |
+
+**Key for Table:** 
+- 0 = Press 
+- X = Not presssed 
+- (2) = Do this instruction twice 
 
 This is a video
 
