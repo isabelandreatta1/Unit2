@@ -55,15 +55,17 @@ Based on a further conversation we had with the client, these were the success c
 1. Must be able to carry out the commands delete, error, acknowledge, send and SOS 
 1. Must be able to send at least 10 words per minute  
 
+**Sketches of our first Design Drafts** 
+
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/Pictures/Communication%20System%20Draft.jpg" width="401" height="537"/>
 
-*Figure : Communication System Design Draft* 
+*Figure 1: Communication System Design Draft* 
 
 ### Tinkercad Prototype 
 
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/Pictures/Tinkercad.png" width="712" height="357"/>
 
-*Figure : Our Tinkercad prototype including both hardware and code* 
+*Figure 2: Our Tinkercad prototype including both hardware and code* 
 
 We used Tinkercad to create our prototype. Tinkercad is an online 3D modelling program, which allows you to create digital prototypes of circuits. Due to its easy usability and clear design, it was a good tool to first test our code and also understand the hardware circuit. Once we arrived to a functioning online model, we then copied and uploaded the code on the arduino, and used the tinkercad circuit as a reference as we built the physical one. After we created our first prototype, we then worked alternating between Tinkercad and the physical device, always first checking with Tinkercad when adding a new feature, and then copying it down to our device. 
 
@@ -71,12 +73,12 @@ We used Tinkercad to create our prototype. Tinkercad is an online 3D modelling p
 
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/Pictures/System%20Diagram.jpg" width="744.8" height="295.2"/>
 
-*Figure : System Diagram* 
+*Figure 3: System Diagram* 
 
 ## Criteria C: Development 
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/Pictures/English%20to%20Binary%20Flowchart.png" width="430" height="940"/>
 
-*Figure : Flow Diagram of the English to Binary* 
+*Figure 4: Flow Diagram of the English to Binary* 
 
 ### Completed Code 
 
@@ -256,12 +258,12 @@ This is a video
 
 ### Alpha Testing 
 
-| Test No. | Procedure | Inputs | Expected Output | Success Criteria                                                                |
-|----------|-----------|--------|-----------------|---------------------------------------------------------------------------------|
-| 1        |           |        |                 | Must allow the user to enter English and output in binary                       |
-| 2        |           |        |                 | Must allow the user to enter either morse code and output to English            |
-| 3        |           |        |                 | Must be able to carry out the commands delete, error, acknowledge, send and SOS |
-| 4        |           |        |                 | Must be able to send at least 10 words per minute                               |
+| Test No. | Procedure | Inputs | Expected Output | Success Criteria                                                                |Criteria Met| 
+|----------|-----------|--------|-----------------|---------------------------------------------------------------------------------|------------|
+| 1        |           |        |                 | Must allow the user to enter English and output in binary                       |.  |
+| 2        |           |        |                 | Must allow the user to enter either morse code and output to English            |.  |
+| 3        |           |        |                 | Must be able to carry out the commands delete, error, acknowledge, send and SOS |.  |
+| 4        |           |        |                 | Must be able to send at least 10 words per minute                               |.  |
 
 ### Limitations and Further Improvements 
 
