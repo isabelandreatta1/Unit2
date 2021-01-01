@@ -208,9 +208,59 @@ void dcl_L() {
 
 ### Input message and convert to Binary 
 
+The next major function for our device was to convert our English message into binary using an LED. This meant that we had to attach an LED to our breadboard and connect it to our Arduino. The translation from English to binary would occur whenever the user sends a message, meaning that the reciever of the message gets the text in binary and then must translate it using their own device. To make things simpler, we created a function for whenever the right button is clicked twice, which performs the send command by translating the message into binary. 
+
+Inside the function, the first thing is a for loop which converts the message into a character. 
+
+``` for (int i =0; i< msg.length()-1; i++){char msgchar = msg.charAt(i)``` 
+
+Then, once we converted each letter into a character, we used the BIN command, which specifies the format of the text. This then converts the character into binary automatically. The arduino functions using ASCII code (American Standard Code for Information Interchange), which interprets characters as letters. However, this means that the alphabet starts from the number 65 (since 0-65 are allotted for puncutation or other symbols). We thought starting from the number 65 was counter-intuitive for someone trying to decrypt the message, so we subtracted 65 from the ASCII Code number, making the alphabet start from the number 0. This meant that A would mean 0, B would mean 1, etc.. 
+
+``` String binary = String(msgchar-65,BIN)``` 
+
+Next, the device would have to display the binary number using an LED. The way we chose to display this is by representing 0s as LED off for 5 seconds, 1s as LED on for 5 seconds , and change of letter as LED on for 1 second. This way the reciever would not be confused if the LED is off or if it is representing a letter. Using another for loop, it would run through each 1 and 0 inside the binary representation, and then turn on according if it is a 1 or 0 using an if statement. 
+
+```cpp 
+if (binary[x] == '0'){
+        Serial.println("Zero");
+		digitalWrite(led,LOW); 
+        delay(50000);  
+      	digitalWrite(led,HIGH); 
+  		delay(10000); 
+  		digitalWrite(led,LOW); 
+      	delay(1000); 
+        }
+      if (binary[x] =='1'){
+      	Serial.println("One");
+      	digitalWrite(led, HIGH);
+ 	 	delay(50000); 
+  		digitalWrite(led,LOW);
+        delay(10000); 
+        digitalWrite(led,HIGH); 
+  		delay(10000); 
+  		digitalWrite(led,LOW); 
+      	delay(10000);
+       }
+  	}
+```
+
+Lastly, we had to make the screen blank and restart the message after it sends. We simply used the ```remove()``` method and made the variable message into an empty string. 
+
+```
+  to_send.remove(to_send.length()-1);
+  msg = "";
+  
+  for (int i=0; i<=to_send.length()+1; i++){
+    lcd.print(" ");
+    lcd.setCursor(0+i, 1);
+  	lcd.print(" ");
+``` 
+
+Code for imputting English and sending to Binary: 
 
 ```cpp
 //Double-click right -> Send message
+int led = 13;
 void dcl_R() {
   to_send = msg;
   for (int i =0; i< msg.length()-1; i++){
