@@ -87,7 +87,7 @@ We spent most time working on the development since it is the bulk of the projec
 
 **Displaing the letters** 
 
-This was the first elementary step we had to take in order to start off our project. We had ideated our initial draft, knowing that the basic function of inputting English would be based on a blinking light and then choosing it based on pressing left or right. The LCD (Liquid Crystal Display), or our screen, can only display two rows of 16 characters, meaning that we had very limited space and could not fit all of our commands at once. We wanted to keep the bottom row for displaying the message, this way the user can see what they are typing. This meant we only had to use the top row for displaying characters. We created the display of characters, or key, by creating a char, or a data type which stores multiple characters. On our code, it would look like this: ```char letters[17] = "ABCDEFGHIJKLMNOP";``` Since C++ is a low-level language, we need to specify the type of variable and also the number of characters. We created a for loop inside our setup which printed every letter inside our 'letters' variable starting from the first row and first column of our display. So whenever you turned on the device, the first thing it would show you the first 16 letters of the alphabet. 
+This was the first elementary step we had to take in order to start off our project. We had ideated our initial draft, knowing that the basic function of inputting English would be based on a blinking light and then choosing it based on pressing left or right. The LCD (Liquid Crystal Display), or our screen, can only display two rows of 16 characters, meaning that we had very limited space and could not fit all of our commands at once. We wanted to keep the bottom row for displaying the message, this way the user can see what they are typing. This meant we only had to use the top row for displaying characters. We created the display of characters, or key, by creating a char, or a data type which stores multiple characters. On our code, it would look like this: ```char letters[17] = "ABCDEFGHIJKLMNOP";``` Since C++ is a low-level language, we need to specify the type of variable and also the number of characters. We created a for loop inside our setup which printed every letter inside our 'letters' variable starting from the first row and first column of our display. So whenever you turned on the device, the first thing it would show you the first 16 letters of the alphabet. In order to make a second screen so we could fit the entire alphabet, in addition to a few commands and puncutation symbols, we created a new char: ```char letters2[17] = "QRSTUVWXYZ@!.SAE";```. In order to shift from one screen to another, we created the variable ```switchscreen``` and defined it as 0. Then, we used many if statements. If the switchscreen was set to 0, or the default value we gave it, then the first screen would be shown. After all the letters all blinked, the swtichscreen value would change to 1. If the switchscreen is 1, then the second screen it shown. After all those letters blinked, the switchscreen value changes back to 0, therefore creating a continious cycle.  
 
 For displaying text, you can use some default methods such as: 
 - ```lcd.setCursor(0, 0) ```: Starts the text on the first row and first column. The 0,0 in parenthesis marks the location of the character. 
@@ -96,11 +96,51 @@ For displaying text, you can use some default methods such as:
 Code for displaying the letters: 
 ```cpp 
 char letters[17] = "ABCDEFGHIJKLMNOP";
-void setup(){
-lcd.setCursor(0, 0);
-  for (int i=0; i<sizeof(letters)-1; i++) {
-  	lcd.print(letters[i]);}
+char letters2[17] = "QRSTUVWXYZ@!.SAE";
+int switchscreen = 0; 
+void loop() {
+  
+  if (switchscreen == 0){
+    
+    lcd.setCursor(0, 0);
+    for (int i=0; i<sizeof(letters)-1; i++) {
+      lcd.print(letters[i]);
+    }
+    
+    
+    if (d%8==0 && d>0){
+    	switchscreen = 1;
+      	d+=1;
+    }
+    
+    if (it%4 == 0 && it>0) {
+        d+=1;
+    }
+    blinkon();
+    blinkoff(); 
+    it+=1;
+    
   }
+  
+  else{
+    lcd.setCursor(0, 0);
+    for (int i=0; i<sizeof(letters2)-1; i++) {
+      lcd.print(letters2[i]);
+    }
+    
+    if (d%8==0 && d>0){
+    	switchscreen = 0; 
+      d+=1;
+    }
+    
+    if (it%4 == 0 && it>0) {
+        d+=1;
+    }
+    blinkon();
+    blinkoff2(); 
+    it+=1;
+  }
+
 ``` 
 
 **Blinking letters** 
@@ -111,8 +151,7 @@ The next step was to make the letters blink. We chose to make the first letter i
 
 *Note: Example above only demonstrates with four letters, we would apply this concept with all 16 characters* 
 
-In order to do that, we created two seperate functions, one for the blinking off the lights and one for blinking on the lights. This made it easier to follow within our void loop. Since we would have to make two letters blink simultaneously, we created two variables: ```pos_l``` and ```pos_r```. ``Pos_l``, short for position left, would make the left side of the letters blink, while ```pos_r``` would make the right side of the letters blink. Our letters start flashing from the middle of our screen, which means our initial positions are the characters on column 7 and 8. The blinking off function just replaced the character with an empty string, and had a delay of 200 milliseconds. Next, the blink on function would use the variable d (first defined as 0) and find the module of d and 8 and find the next position. It then print the letter again and has another delay of 200 milliseconds. If it were on the left, then it would have to subtract position, and if it were on the right, then it would have to add position. The last step is to bring both functions together in a void loop. If the mod of the iterations of both functions with 6 is 0, then d would increase by 1. The reason why we need to find the mod of iterations with 6 is because.... 
-
+In order to do that, we created two seperate functions, one for the blinking off the lights and one for blinking on the lights. This made it easier to follow within our void loop. Since we would have to make two letters blink simultaneously, we created two variables: ```pos_l``` and ```pos_r```. ``Pos_l``, short for position left, would make the left side of the letters blink, while ```pos_r``` would make the right side of the letters blink. Our letters start flashing from the middle of our screen, which means our initial positions are the characters on column 7 and 8. The blinking off function just replaced the character with an empty string, and had a delay of 200 milliseconds. Next, the blink on function would use the variable d (first defined as 0) and find the module of d and 8 and find the next position. It then print the letter again and has another delay of 200 milliseconds. If it were on the left, then it would have to subtract position, and if it were on the right, then it would have to add position. The last step is to bring both functions together in a void loop. If the mod of the iterations of both functions with 6 is 0, then d would increase by 1. The reason why we need to find the mod of iterations with 6 is because it will blink 6 times. 
 ### FINISH THIS SECTION 
 
 Code for blinking letters: 
@@ -158,9 +197,13 @@ For sending the message, it checks if the button has been pressed twice. If it h
 
 If instead the right button has been pressed twice, then it will recall the delete function. The delete function, we use the ```delete()``` method to decrease the length of the message by one letter. Then, we reprint the messsage without the incorrect letter. 
 
+For the commands, we had to be able to create a distinction between the letters "S","A","E" and the commands, "SOS","Acknowledge,"Error." We did this by creating an if statement: if on the second screen, the character "S" is selected, then, the messsage becomes "SOS." The same if statement was applied with the other commands. It was only neccessary to put this code in the right button function because all the commands were placed on the right hand side of the screen, meaning that you only used the right button to select them. 
+
 Code for Selecting Letters: 
 ```cpp 
-String msg = "";
+
+}
+    
   void L_Button() {
     if (it-last_bpl<=1 && it>0) {
       Serial.print("double click ");
@@ -168,10 +211,18 @@ String msg = "";
     }
       
     else {
-      msg.concat(letters[pos_l-(d%8)]);
-      lcd.setCursor(0, 1);
-      lcd.print(msg); 
-      last_bpl = it;
+      if (switchscreen == 0){
+        msg.concat(letters[pos_l-(d%8)]);
+        lcd.setCursor(0, 1);
+        lcd.print(msg); 
+        last_bpl = it;
+      }
+      else{
+        msg.concat(letters2[pos_l-(d%8)]);
+        lcd.setCursor(0, 1);
+        lcd.print(msg); 
+        last_bpl = it;
+      }
     }
   }
   
@@ -182,14 +233,32 @@ String msg = "";
     }
     
     else {
+      if (switchscreen ==0){
     	msg.concat(letters[pos_r+(d%8)]);
     	lcd.setCursor(0, 1);
     	lcd.print(msg);
     	last_bpr = it;
+      }
+          
+      else{
+        msg.concat(letters2[pos_r+(d%8)]);
+    	lcd.setCursor(0, 1);
+        if (msg == "S"){
+          msg = "SOS";
+            }
+        if (msg == "A"){
+          msg = "ACKNOWLEDGE";
+            }
+        if (msg == "E"){
+          (msg = "ERROR");
+            }
+    	lcd.print(msg);
+    	last_bpr = it;  
+        }
     }
   }
-  
- //Double-click left -> Delete letter
+
+//Double-click left -> Delete letter
 void dcl_L() {
   msg.remove(msg.length()-1);
   msg.remove(msg.length()-1);
@@ -203,6 +272,7 @@ void dcl_L() {
   lcd.setCursor(0, 1);
   lcd.print(msg);
 }
+
 
 ```
 
@@ -318,7 +388,7 @@ LiquidCrystal lcd(12, 11, 7, 6, 5, 4);
 String msg = "";
 String to_send = "";
 char letters[17] = "ABCDEFGHIJKLMNOP";
-char letters2[17] = "QRSTUVWXYZ!.@$()";
+char letters2[17] = "QRSTUVWXYZ@!.SAE";
 int pos_l = 7;
 int pos_r = 8;
 int time = 0;
@@ -328,6 +398,7 @@ int it=0;
 int last_bpl=0;
 int last_bpr=0;
 int led = 13; 
+int switchscreen = 0; 
 
 int inByte = 0; // sets up the variable that will store incoming data from serial (keyboard)
 const int ledPin = 10; // sets pin 10 as the pin to which the LED light is attached
@@ -351,15 +422,9 @@ void setup() {
   // serial monitor
   Serial.begin(9600);
   
-  // print initial letters
-  lcd.setCursor(0, 0);
-  for (int i=0; i<sizeof(letters)-1; i++) {
-  	lcd.print(letters[i]);
   }
-}
 
-  
-void blinkoff(){
+void blinkon(){
   	lcd.setCursor(pos_l - (d%8), 0);
   	lcd.print(" ");
   	lcd.setCursor(pos_r + (d%8), 0);
@@ -367,7 +432,7 @@ void blinkoff(){
   	delay(200); 
 }
 
-void nextletter(){
+void blinkoff(){
   lcd.setCursor(pos_l - (d%8), 0);
   lcd.print(letters[pos_l - (d%8)]);    
   lcd.setCursor(pos_r + (d%8), 0);
@@ -375,17 +440,61 @@ void nextletter(){
   delay(200);
 }
 
+
+void blinkoff2(){
+  lcd.setCursor(pos_l - (d%8), 0);
+  lcd.print(letters2[pos_l - (d%8)]);    
+  lcd.setCursor(pos_r + (d%8), 0);
+  lcd.print(letters2[pos_r + (d%8)]);
+  delay(200);
+}
+  
 void loop() {
-  if (it%6 == 0 && it>0) {
+  
+  if (switchscreen == 0){
+    
+    lcd.setCursor(0, 0);
+    for (int i=0; i<sizeof(letters)-1; i++) {
+      lcd.print(letters[i]);
+    }
+    
+    
+    if (d%8==0 && d>0){
+    	switchscreen = 1;
+      	d+=1;
+    }
+    
+    if (it%4 == 0 && it>0) {
+        d+=1;
+    }
+    blinkon();
+    blinkoff(); 
+    it+=1;
+    
+  }
+  
+  else{
+    lcd.setCursor(0, 0);
+    for (int i=0; i<sizeof(letters2)-1; i++) {
+      lcd.print(letters2[i]);
+    }
+    
+    
+    if (d%8==0 && d>0){
+    	switchscreen = 0; 
       d+=1;
+    }
+    
+    if (it%4 == 0 && it>0) {
+        d+=1;
+    }
+    blinkon();
+    blinkoff2(); 
+    it+=1;
   }
 
-  blinkoff();
-  blinkon(); 
-  it+=1;
-
 }
-   
+    
   void L_Button() {
     if (it-last_bpl<=1 && it>0) {
       Serial.print("double click ");
@@ -393,10 +502,18 @@ void loop() {
     }
       
     else {
-      msg.concat(letters[pos_l-(d%8)]);
-      lcd.setCursor(0, 1);
-      lcd.print(msg); 
-      last_bpl = it;
+      if (switchscreen == 0){
+        msg.concat(letters[pos_l-(d%8)]);
+        lcd.setCursor(0, 1);
+        lcd.print(msg); 
+        last_bpl = it;
+      }
+      else{
+        msg.concat(letters2[pos_l-(d%8)]);
+        lcd.setCursor(0, 1);
+        lcd.print(msg); 
+        last_bpl = it;
+      }
     }
   }
   
@@ -407,10 +524,28 @@ void loop() {
     }
     
     else {
+      if (switchscreen ==0){
     	msg.concat(letters[pos_r+(d%8)]);
     	lcd.setCursor(0, 1);
     	lcd.print(msg);
     	last_bpr = it;
+      }
+          
+      else{
+        msg.concat(letters2[pos_r+(d%8)]);
+    	lcd.setCursor(0, 1);
+        if (msg == "S"){
+          msg = "SOS";
+            }
+        if (msg == "A"){
+          msg = "ACKNOWLEDGE";
+            }
+        if (msg == "E"){
+          (msg = "ERROR");
+            }
+    	lcd.print(msg);
+    	last_bpr = it;  
+        }
     }
   }
 
@@ -429,7 +564,6 @@ void dcl_L() {
   lcd.print(msg);
 }
 
- 
 //Double-click right -> Send message
 void dcl_R() {
   to_send = msg;
@@ -446,7 +580,7 @@ void dcl_R() {
 		digitalWrite(led,LOW); 
         delay(50000);  
       	digitalWrite(led,HIGH); 
-  		delay(10000); 
+  		delay(1000); 
   		digitalWrite(led,LOW); 
       	delay(1000); 
         }
@@ -455,13 +589,21 @@ void dcl_R() {
       	digitalWrite(led, HIGH);
  	 	delay(50000); 
   		digitalWrite(led,LOW);
-        delay(10000); 
+        delay(1000); 
         digitalWrite(led,HIGH); 
-  		delay(10000); 
+  		delay(1000); 
   		digitalWrite(led,LOW); 
-      	delay(10000);
+      	delay(1000);
        }
   	}
+    Serial.println("New letter");
+    digitalWrite(led,HIGH); 
+    delay(20000); 
+    digitalWrite(led,LOW); 
+    delay(20000); 
+    digitalWrite(led,HIGH); 
+    delay(20000); 
+    digitalWrite(led,LOW);
   }
   
   to_send.remove(to_send.length()-1);
@@ -472,7 +614,6 @@ void dcl_R() {
     lcd.setCursor(0+i, 1);
   	lcd.print(" ");
   }
-  
 }
 ```
 
