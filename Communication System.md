@@ -646,7 +646,7 @@ This is a video
 |----------|-----------|--------|-----------------|---------------------------------------------------------------------------------|------------|
 | 1        |      Use left and right buttons to select best, and then double press the right button to send message.     |    "Best"    |    "Best" printed on message, and get the numbers 1,5,18,19 blink on the LED light.             | Must allow the user to enter English and output in binary                       |Yes |
 | 2        |           |        |                 | Must allow the user to enter either morse code and output to English            |.  |
-| 3        |           |        |                 | Must be able to carry out the commands delete, error, acknowledge, send and SOS |.  |
+| 3        |       Use left button to select E, double press left button to delete letter. Then, wait for the second screen and press "S" for SOS.    |    "E" and "S"    |           Messsage "E" printed, then deleted letter/empty message. Next, "SOS" message, and numbers 18,14,18 blink on the LED light.      | Must be able to carry out the commands delete, error, acknowledge, send and SOS | Met |
 | 4        |           |        |                 | Must be able to send at least 10 words per minute                               |.  |
 
 ### Limitations and Further Improvements 
