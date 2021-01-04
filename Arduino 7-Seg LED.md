@@ -14,7 +14,6 @@ We are using an Arduino Uno R3 in order to create the LED and button circuit,
 
 *Figure 2. Sketches of possible displays* 
 
-
 ### Criteria for success
 1. The display should count from 0-9 
 1. A table showing each number number 0-9 and corresponding LEDs are included 
@@ -26,13 +25,22 @@ We are using an Arduino Uno R3 in order to create the LED and button circuit,
 
 *Figure 3. System Diagram* 
 
+This is my system diagram, showing the inputs, outputs and modules of my device. 
+
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/TRUTH_TABLE.png" width="450" height="300"/>
+
 
 *Figure 4. Truth Table* 
 
+Above is a truth table illustrating the button presses in correspondance to light on/off states. While "X,Y,W,Z" are labels for the four buttons used, "a,b,c,d,e" are labels for each LED. This truth table is very useful for creating the button-press combinations for each number, as well as it helps considerably with creating boolean-logic equations. 
+
+
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/LED_LIGHT_DIAGRAM.png" width="300" height="200"/>
                                                                                                             
-*Figure 5. LED-Lights Diagram* 
+*Figure 5. LED Diagram* 
+
+This diagram labels the LEDs with letters. This is used in the truth table above. 
+
 
 ### Record of Tasks  
 | Task No. | Planned Action                                                                        | Planned Outcome                                                                | Time Estimated | Target Completion Date | Criterion |
