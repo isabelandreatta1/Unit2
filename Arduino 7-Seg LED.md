@@ -20,6 +20,7 @@ We are using an Arduino Uno R3 in order to create the LED and button circuit,
 1. Information indicating what the buttons do is included
 1. The display uses maximum 7 LEDs and 4 buttons 
 
+
 ## Criteria B: Design 
 ![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/IMG_2759.JPG)
 
@@ -128,6 +129,19 @@ void loop()
 
 ## Criteria D: Functionality 
 
-### Testing Plan  
+I was not able to complete the device, unfortunately, within the time frame given. However, I was able to complete a functioning simulation on Tinkercad, a website which created 3D modelling of circuits. 
 
 ## Criteria E: Evaluation 
+
+### Limitations 
+Considering the project was mostly done for the purpose of getting acquianted with the Arduino and boolean logic, I was successful in learning more and feeling more comfortable with the topics covered this unit. However, in regards to my device, it had many flaws. This was in part because I was still learning how to use an Arduino and understanding boolean logic, in addition to lack of time and working solo. I had the realisation the day before the project was due on how simple and useful the truth-table actually was. 
+
+Prior to this realiastion, my code had many issues not because it did not function but the button and led correspondance was incorrect due to incorrect boolean equations. My boolean equations were based on my truth tables, and without a correct truth table, my code would all be wrong. So the day before, I had to scramble and remake the truth table. Since I did not have functioning code until the day before the project was due, I also had to make the physical prototype the day before. There were a couple of mistakes in my connections and also my boolean equations were still slightly off (better than before), so I improvised and had to change the button combinations in correspondance to what the lights were, rather than controlling what the combinations would be. Lastly, while the cardboard used was a good way to clean up the device and make it more organised, the buttons were at the back of the box. This meant that it was difficult to access the buttons, and easy to unplug or move a wire. 
+
+To summarise, some of the limitations of my device include: 
+1. Incorrect boolean equations, leading to incorrect button combinations 
+1. Connection issues in the circuit, therefore not turning the LEDs as planned 
+1. Having the buttons inside the presentation box, making it easy to unplug or move a wire 
+
+For further improvements, I would need more time to design the box, therefore having a cleaner look and more accesssible buttons, and to remake my truth table and get rid of small mistakes. By being more thorough with my checking, I would have the right code and also fix the connection isssues with my circuit.  
+
