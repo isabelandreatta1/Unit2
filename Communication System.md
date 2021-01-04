@@ -644,7 +644,7 @@ This is a video
 
 | Test No. | Procedure | Inputs | Expected Output | Success Criteria                                                                |Criteria Met| 
 |----------|-----------|--------|-----------------|---------------------------------------------------------------------------------|------------|
-| 1        |      Use left and right buttons to select hello, and then double press the right button to send message.     |    "Hello"    |    "Hello" printed on message, and get the numbers 7, 4,11, 11, 14  blink on the LED light.             | Must allow the user to enter English and output in binary                       |Yes |
+| 1        |      Use left and right buttons to select best, and then double press the right button to send message.     |    "Best"    |    "Best" printed on message, and get the numbers 1,5,18,19 blink on the LED light.             | Must allow the user to enter English and output in binary                       |Yes |
 | 2        |           |        |                 | Must allow the user to enter either morse code and output to English            |.  |
 | 3        |           |        |                 | Must be able to carry out the commands delete, error, acknowledge, send and SOS |.  |
 | 4        |           |        |                 | Must be able to send at least 10 words per minute                               |.  |
