@@ -354,6 +354,8 @@ print(SameFirstLast(array = [1,2,1]))
 
 ### Flowchart 
 
+![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Quiz%2011.png)
+
 ## Quiz 12 
 Given an array of words, find the average word length.
 
@@ -390,5 +392,6 @@ print(wordlength(array = ["police","abacus"])
 
 ### Flowchart 
 
+![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Blank%20diagram.png)
 
 
