@@ -314,3 +314,70 @@ print(BigNeighbour(numbers = [1,2,3,4,5,7]))
 ```
 
 ### Flowchart 
+
+## Quiz 11 
+
+### Pseudo Code 
+```
+Function SameFirstLast(array):
+firstelement = array[0] 
+lastelement = array[array.length-1] 
+if firstelement == lastelement and array.length >= 1:
+	return True
+else:
+	return False 
+end Function 
+
+### Python 
+```py.
+def SameFirstLast(array): 
+	firstelement = array[0] 
+	lastelement = array[len(array)-1] 
+	if firstelement == lastelement and len(array)>=1:
+		return True
+	else: 
+		return False 
+print(SameFirstLast(array = [1,2,3])) 
+print(SameFirstLast(array = [1,2,3,1]) 
+print(SameFirstLast(array = [1,2,1])) 
+```
+
+### Flowchart 
+
+## Quiz 12 
+Given an array of words, find the average word length.
+
+### Pseudo Code 
+``` 
+Function wordcounter(array): 
+wordcounter = 0 
+lettercounter = 0 
+loop i from 0 to array.length-1:
+	wordcounter += 1 
+	loop n from 0 to array[1].length-1:
+	lettercounter += 0 
+	end loop 
+end loop 
+return(lettercounter/wordcounter) 
+end Function 
+```
+
+### Python 
+```def wordlength(array):
+	wordcounter = 0 
+	lettercounter = 0 
+	for i in range(len(array)): 
+		wordcounter += 1 
+		for n in range(len(array[i]):
+		lettercounter +=1 
+	return(lettercounter/wordcounter) 
+
+print(wordlength(array = ["home","car","travel","beach"]) 
+print(wordlength(array = ["sun","sat","cut","can"]) 
+print(wordlength(array = ["police","abacus"]) 
+``` 
+
+### Flowchart 
+
+
+
