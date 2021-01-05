@@ -299,7 +299,17 @@ print(MissingNumber(array = [73,74,75,76,78,79]))
 ## Quiz 10
 
 ### Pseudo Code 
-
+``` 
+Function BigNeighbour(numbers)
+largestdifference = 0 
+loop i from 0 to numbers.length-1:
+	difference = abs(numnbers[i] - numbers[i+1]) 
+	if difference > largestdifference:
+		largestdifference = difference 
+		end loop 
+return(largestdifference) 
+end Function 
+```
 ### Python 
 ```py
 def BigNeighbour(numbers):
@@ -327,7 +337,7 @@ if firstelement == lastelement and array.length >= 1:
 else:
 	return False 
 end Function 
-
+``` 
 ### Python 
 ```py.
 def SameFirstLast(array): 
@@ -363,7 +373,8 @@ end Function
 ```
 
 ### Python 
-```def wordlength(array):
+```py.
+def wordlength(array):
 	wordcounter = 0 
 	lettercounter = 0 
 	for i in range(len(array)): 
