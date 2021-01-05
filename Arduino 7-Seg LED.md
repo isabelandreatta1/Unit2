@@ -60,7 +60,6 @@ This diagram labels the LEDs with letters. This is used in the truth table above
 
 ## Criteria C: Development 
 
-
 ```cpp
 int led_a = 13; 
 int led_b = 12;
@@ -72,11 +71,16 @@ int btn_y = 7;
 
 int btn_w = 6; 
 int btn_z = 5; 
+
 int val_x = 0; 
 int val_y = 0; 
 int val_w = 0; 
 int val_z = 0; 
+``` 
 
+In this section of the code, I am assigning each input pin to a variable. This variable makes it easier for me to code and eaiser to understand. Since C++ is a low-level language, I have to specify what type of data-type each variable is. In this case, all of my variable are integers. 
+
+```cpp 
 void setup()
 {
   pinMode(led_a, OUTPUT); 
@@ -86,8 +90,10 @@ void setup()
   pinMode(led_e, OUTPUT); 
   Serial.begin(9600); 
 }
-
-    
+ ``` 
+ Here, on the other hand, is the code for acknowledging each pin/led to the Arduino in my set up. By doing it in my set up, the Arduino recognises the LEDs first. 
+ 
+ ```cppp 
 void loop()
 {
   val_x = digitalRead(btn_x);
@@ -95,6 +101,10 @@ void loop()
   val_w = digitalRead(btn_w);
   val_z = digitalRead(btn_z);
 
+``` 
+Next, I make it even easier and asssign a variable name to the acknowledgement of buttons. In C++, if I want to mention a button, I need to include ```digitalRead``` since it reads the button presses. It is simpler to just give variable names instead of having to repeat the ```digitalRead(button)``` code every time. 
+
+```cpp 
   int a = (!val_z) && (!val_w) && val_y || (!val_z) && (!val_w) && val_x || (!val_x) && (!val_y) && (!val_z) && val_w || val_z && val_w && val_y || val_x && val_y && val_z && (!val_x) && (!val_y) && val_z && (!val_w); 
   digitalWrite(led_a,a);  
   int b =  (!val_x) && val_y && (!val_z) && (!val_w) ||  (!val_x) && (!val_y) && (!val_z) && val_w || (!val_x) && val_y && (!val_z) && val_w || (!val_x) && (!val_y) && val_z && (!val_w) || val_x && val_y && val_z && (!val_w); 
@@ -106,6 +116,7 @@ void loop()
   digitalWrite(led_e,d);  
 }
 ```
+Above is the bulk and the most important part of my code. It appears very dense, but in reality it is my boolean equations. The boolean equations make my code shorter, shortening my code by stating something like "if this button-press combination occurs, then this this is the led-combination output." If I were to write my code without boolean equations, I would have to use a myriad of "if statements." 
 
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/DipslayBack.JPG" width="380" height="220"/>
 
