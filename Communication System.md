@@ -645,9 +645,12 @@ Letter to Decimal Number Key
 | **D**| 3 | **I** | 8 | **N** | 13 | **S** | 18 | **X** | 23 |   |    |
 | **E** | 4 | **J** | 9 | **O** | 14 | **T** | 19 | **Y** | 24 |   |    |
 
-This is a video
 
 ## Criteria E: Evaluation 
+
+https://drive.google.com/file/d/1MAuCFV6D2F3c2CchdwKKKxklWseqqgfF/view?usp=sharing 
+
+Above is a video with our testing. 
 
 ### Alpha Testing 
 
