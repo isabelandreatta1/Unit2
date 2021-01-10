@@ -373,8 +373,6 @@ void dcl_R() {
   	lcd.print(" ");
   }
   ``` 
-  
-### Input Morse code and output English translation 
 
 ### Completed Code 
 
