@@ -89,15 +89,14 @@ end function
 ### Python Code 
 
 ```py
-def rangeN():
-    N = int(input("Please input int N "))
+def rangeN(N):
     count = 0
     for i in range(N+1):
         print(i)
         count += i
-    print(count)
+    return(count)
 
-rangeN()
+print(rangeN(N = 6))
 ```
 Test: 
 
@@ -126,15 +125,15 @@ end function
 ```
 ### Python Code 
 ```py
-def perfectN():
-    N = int(input("Please input int N "))
+def perfectN(N):
     count = 0
     for i in range(1,N):
         if 6%i == 0:
             print(i)
             count += i
-    print("Sum of factors is:", count , ",", count == N)
-perfectN()
+    return("Sum of factors is:" ,count , "," , count== N)
+
+print(perfectN(N = 6))
 ```
 Test: 
 
@@ -158,12 +157,11 @@ end function
 ```
 ### Python Code 
 ```py
-def TableN():
-    N = int(input("Please input N "))
+def TableN(N):
     for i in range(1,10):
         multiplication = N * i
-        print(N,"x",i,"=", multiplication)
-TableN()
+        return(N,"x",i,"=", multiplication)
+print(TableN(N = 2))
 ```
 Test: 
 
@@ -185,11 +183,13 @@ end function
 ### Python Code 
 
 ```py
-def MixStart():
-    string = input("Please input string ")
-    print(string[1] == 'i' and string[2] == 'x')
-    
-MixStart()
+def MixStart(string):
+    if(string[1] == 'i' and string[2] == 'x'):
+        return True
+    else:
+        return False
+
+print(MixStart(string = "mix snacks"))
 ```
 Test: 
 
@@ -212,13 +212,14 @@ end function
 ```
 ### Python Code 
 ```py
-def letters():
-    string = input("Please input string ")
-    for i in range(len(string)):
-        print(i, "->", string[i])
+def letters(strings):
+    for i in range(len(strings)):
+        return(i, "->", strings[i])
 
+print(letters(strings = ['hello']))
 letters()
 ```
+Test: 
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Test%207.png" width="296" height="188"/>
 
 ### Flow Chart 
@@ -250,6 +251,7 @@ def maxAbs(array):
 
 print(maxAbs(array = [-4,5,6,-7]))
 ```
+Test: 
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Test%208.png" width="512" height="184"/>
 
 ### Flow Chart 
@@ -274,7 +276,7 @@ end loop
 end function 
 ```
 ### Python Code 
-```py
+```py. 
 def MissingNumber(array):
     correctnumber = array[0]
     for i in range(len(array)):
@@ -289,7 +291,7 @@ print(MissingNumber(array = [1,2,3,5,6,7,8,9]))
 print(MissingNumber(array = [4,5,6,8,9,10]))
 print(MissingNumber(array = [73,74,75,76,78,79]))
 ``` 
-
+Test: 
 <img src="https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Test%209.png" width="722" height="240"/>
 
 ### Flow Chart 
@@ -323,6 +325,8 @@ def BigNeighbour(numbers):
 print(BigNeighbour(numbers = [1,2,3,4,5,7]))
 ```
 
+Test: 
+
 ### Flowchart 
 
 ![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Quiz%2010.png)
@@ -353,6 +357,8 @@ print(SameFirstLast(array = [1,2,3]))
 print(SameFirstLast(array = [1,2,3,1]) 
 print(SameFirstLast(array = [1,2,1])) 
 ```
+Test: 
+
 
 ### Flowchart 
 
@@ -379,18 +385,19 @@ end Function
 ### Python 
 ```py.
 def wordlength(array):
-	wordcounter = 0 
-	lettercounter = 0 
-	for i in range(len(array)): 
-		wordcounter += 1 
-		for n in range(len(array[i]):
-		lettercounter +=1 
-	return(lettercounter/wordcounter) 
+	wordcounter = 0
+	lettercounter = 0
+	for i in range(len(array)):
+		wordcounter += 1
+		for n in range(len(array[i])):
+		    lettercounter +=1
+	return(lettercounter/wordcounter)
 
-print(wordlength(array = ["home","car","travel","beach"]) 
-print(wordlength(array = ["sun","sat","cut","can"]) 
-print(wordlength(array = ["police","abacus"]) 
+print(wordlength(array = ["home","car","travel","beach"]))
+print(wordlength(array = ["sun","sat","cut","can"]))
+print(wordlength(array = ["police","abacus"]))
 ``` 
+Test: 
 
 ### Flowchart 
 
