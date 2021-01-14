@@ -326,6 +326,7 @@ print(BigNeighbour(numbers = [1,2,3,4,5,7]))
 ```
 
 Test: 
+![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Quiz10test.png) 
 
 ### Flowchart 
 
@@ -358,7 +359,7 @@ print(SameFirstLast(array = [1,2,3,1])
 print(SameFirstLast(array = [1,2,1])) 
 ```
 Test: 
-
+![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Quiz11Test.png) 
 
 ### Flowchart 
 
@@ -398,6 +399,7 @@ print(wordlength(array = ["sun","sat","cut","can"]))
 print(wordlength(array = ["police","abacus"]))
 ``` 
 Test: 
+![Diagram](https://github.com/isabelandreatta1/Unit2/blob/main/QuizTestPics/Quiz12Test.png)
 
 ### Flowchart 
 
